@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Write Technically | Git Workflow</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu">
+      <h3>Write Technically</h3>
+      <a href="./index.html">Overview</a>
+      <h4>Getting Started</h4>
+      <ul>
+        <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+        <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+        <li><a href="./write_docs.html">Write your docs</a></li>
+        <li><a href="./test_docs.html">Test your documentation</a></li>
+        <li><a href="./review_docs.html">Documentation reviews</a></li>
+      </ul>
+      <h4>Style Guidelines</h4>
+      <ul>
+        <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+        <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+        <li><a href="./interface_standards.html">Interface items and standards</a></li>
+        <li><a href="./language_and_choices.html">Language and choices</a></li>
+        <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+      </ul>
+      <h4>Tutorials</h4>
+      <ul>
+        <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+        <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+      </ul>
+      <h4>Reference</h4>
+      <ul>
+        <li><a href="./recommended_extensions">Recommended VS Code extensions</a></li>
+        <li><a href="./helpful_resources.html">Helpful resources</a></li>
+      </ul>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">Follow the Git workflow</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Follow these steps to clone a repo, make file changes, and commit them to GitLab.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <h3>Clone the project repo locally</h3>
+          <ol>
+            <li>Open a Command Prompt and navigate to the directory you want to clone the repo into:</li>
+              <code class="block">cd &lt;DIRECTORY_NAME&gt;</code>
+            <li>In GitLab, navigate to the repo for your project.</li>
+            <li>Click <strong>Clone</strong> and copy the URL.</li>
+            <li>Back in the Command Prompt, enter the following command:</li>
+              <code class="block">git clone &lt;REPO_URL&gt;</code>
+          </ol>
+          <p>The Command Prompt clones the files from the repo into the specified location.</p>
+    
+          <h3>Create a new branch locally</h3>
+          <p>Create and check out a branch to commit to. When making changes, <em>never</em> commit directly to the <code>master</code> branch! Instead, check out the code and make changes to it. Then, test and request reviews through a merge request (MR). Once approved, merge them to <code>develop</code> and then to <code>master</code>.</p>
+          <p>Run the following command to create a new local branch:</p>
+            <code class="block">git checkout -b &lt;NEW_BRANCH_NAME&gt;</code>
+          <p>The following output should appear in the terminal:</p>
+            <code class="block">Switched to a new branch &lt;NEW_BRANCH_NAME&gt;</code>
+          
+          <h3>Make changes to a project</h3>
+          <p>You're now ready to make changes to the repo files you've cloned:</p>
+          <ol>
+            <li>Using Visual Studio Code (VS Code), open the files you need to edit.</li>
+            <li>Once you complete your edits, save your progress.</li>
+          </ol>
+          <p>You can now use the Command Prompt to add these changes to Git.</p>
+          <ol>
+            <li>Before you add your changes to your project, verify that Git recognizes the changes you made by running the following command to check the status of the files:</li>
+              <code class="block">git status</code>
+              <div class="note">
+                <h4><i class="fas fa-info-circle"></i> <strong>NOTE</strong></h4>
+                <p>You may notice that some directories aren't added to Git by default. This is due to the presence of a <code>.gitignore</code> file, which ignores any files that don't need to be pushed to Git by default.</p>
+              </div>
+            <li>Once verified, you can add them to Git. Run the following commands:</li>
+              <code class="block">git add &lt;NAME_OF_FILE_WITH_CHANGES&gt;</code>
+              <p>Alternatively, if there are multiple files that need to be added, you can use <code>git add .</code> to add them all at once.</p>
+          </ol>
+          
+          <h3>Commit the file changes to Git</h3>
+          <p>Now that files are added to Git and you checked the status, commit the files:</p>
+          <ol>
+            <li>Run the following command:</li>
+              <code class="block">git commit -m &lt;MESSAGE_RELATED_TO_THE_CHANGES&gt;</code>
+            <li>Verify the status again to confirm all files are committed:</li>
+              <code class="block">
+                git status
+              </code>
+          </ol>
+          <p>The terminal should say: <code>Nothing to commit, working tree clean</code>. You've just successfully committed to the branch you created. This is all in your <em>local Git repository</em>, and needs to be pushed to update GitLab. Remember, the best practice is to commit often. Think of a commit as saving your progress.</p>
+    
+          <h3>Push the commits</h3>
+          <p>Now that you've made local commits, push them into the repository in GitLab.</p>
+          <p>Run the following command:</p>
+          <code class="block">git push --set-upstream origin &lt;NEW_BRANCH_NAME&gt;</code>
+          <p>Congratulations! You've synced up the GitLab repo with your local Git changes.</p>
+    
+          <h3>More info</h3>
+          <ul class="menu">
+            <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+            <li><a href="./best_practices.html">Style guidelines</a></li>
+          </ul>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Write Technically</h3>
+          <a href="./index.html">Overview</a>
+          <h4>Getting Started</h4>
+          <ul>
+            <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+            <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+            <li><a href="./write_docs.html">Write your docs</a></li>
+            <li><a href="./test_docs.html">Test your documentation</a></li>
+            <li><a href="./review_docs.html">Documentation reviews</a></li>
+          </ul>
+          <h4>Style Guidelines</h4>
+          <ul>
+            <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+            <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+            <li><a href="./interface_standards.html">Interface items and standards</a></li>
+            <li><a href="./language_and_choices.html">Language and choices</a></li>
+            <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+          </ul>
+          <h4>Tutorials</h4>
+          <ul>
+            <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+            <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+          </ul>
+          <h4>Reference</h4>
+          <ul>
+            <li><a href="./recommended_extensions.html">Recommended VS Code extensions</a></li>
+            <li><a href="./helpful_resources.html">Helpful resources</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>

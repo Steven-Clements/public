@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Write Technically | Content Development Strategy</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu">
+      <h3>Write Technically</h3>
+      <a href="./index.html">Overview</a>
+      <h4>Getting Started</h4>
+      <ul>
+        <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+        <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+        <li><a href="./write_docs.html">Write your docs</a></li>
+        <li><a href="./test_docs.html">Test your documentation</a></li>
+        <li><a href="./review_docs.html">Documentation reviews</a></li>
+      </ul>
+      <h4>Style Guidelines</h4>
+      <ul>
+        <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+        <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+        <li><a href="./interface_standards.html">Interface items and standards</a></li>
+        <li><a href="./language_and_choices.html">Language and choices</a></li>
+        <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+      </ul>
+      <h4>Tutorials</h4>
+      <ul>
+        <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+        <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+      </ul>
+      <h4>Reference</h4>
+      <ul>
+        <li><a href="./recommended_extensions">Recommended VS Code extensions</a></li>
+        <li><a href="./helpful_resources.html">Helpful resources</a></li>
+      </ul>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">Develop a content strategy</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">The quality and effectiveness of all documentation can be measured against three traits: <em>readability</em>, <em>accuracy</em>, and <em>discoverability</em>.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <p>These traits are often used to determine documentation quality, but you can also use them to establish goals for creating a documentation strategy.</p>
+    
+          <h3>Readability</h3>
+          <p>While the prose is an essential factor in documentation, readability broadly considers who the documentation is targeted toward and how it's written.</p>
+    
+          <h4>Audience</h4>
+          <p>To be truly useful, your docs must address the needs of specific users. When you craft your documentation plan, it's essential to ask yourself these critical questions about your readers:</p>
+          <ul>
+            <li>Who are the users?</li>
+            <li>What are their job functions?</li>
+            <li>Are they technical or non-technical?</li>
+            <li>Are they internal or external users?</li>
+            <li>What is their average knowledge level of the technical content?</li>
+            <li>What do they need to get started?</li>
+            <li>How do they process information?</li>
+          </ul>
+          <p>Determine the identity of your users and what they need to succeed. If your user base is mixed (users with varying levels of expertise or knowledge), organize your information architecture in an organized format that divides technical content by complexity or a hierarchical structure that takes users from basic to more complex. Regardless of your audience makeup, determine the key issues to convey and how your docs address their specific needs.</p>
+    
+          <h4>Personas</h4>
+          <p>Understanding who's likely to consume your documentation significantly influences how it's created. Establishing one or more reader personas will define how technical and detailed the documentation should be.</p>
+    
+          <div class="important">
+            <h4><i class="fas fa-exclamation-circle"></i> Important!</h4>
+            <p>User personas established for marketing campaigns and usability plans may not necessarily be the same personas used for documentation purposes, as the buyer isn't always the same person as the user.</p>
+          </div>
+    
+          <h4>Keep it simple</h4>
+          <p>Always write for your most challenging reader, not your most agreeable one. Most readers don't want to sift through a ton of text to get an answer. Others have a hard time understanding business jargon. Some readers always take ambiguous wording the wrong way.</p>
+          <p>Using everyday language and avoiding ambiguity can drastically improve any document's readability.</p>
+    
+          <h4>Descriptive versus task-based information</h4>
+          <p>Documentation is typically split between two types of information: descriptive and task-based.</p>
+          <ul>
+            <li>Descriptive information <em>describes</em> something. It provides context around a component or topic.</li>
+            <li>Task-based information tells <em>how to do something</em>. It's typically written in an active voice and directs the reader to perform one or more actions.</li>
+          </ul>
+          <p>Both types of information are necessary within documentation. Splitting them into two distinct sections is recommended to improve readability.</p>
+    
+          <h3>Accuracy</h3>
+          <p>Inaccurate documentation may as well not exist. It doesn't provide helpful information. It wastes time, sends users down the wrong path, increases the time developers must spend supporting their projects, and breaks any semblance of trust that may have been established with the reader.</p>
+          <p>Ensuring that documentation is readable is crucial, but verifying its accuracy is equally important.</p>
+    
+          <h4>Technical reviews</h4>
+          <p>To ensure accurate documentation, a series of technical reviews with the original feature developer should be performed throughout the process. The first review should occur before any documentation is written. This gives the writer time to understand the necessary information before putting it on paper.</p>
+          <p>After the initial draft is written, a second review should be performed to verify the accuracy of the written piece. This ensures documentation is written from a <em>new</em> user's perspective while allowing clients to correct any misunderstandings or assumptions before publishing.</p>
+    
+          <h3>Discoverability</h3>
+          <p>The final trait of high-quality documentation is discoverability. It doesn't matter how accurate or readable documentation is if the user can't find the information they're looking for. Discoverability can be accomplished in several ways.</p>
+    
+          <h4>Information architecture</h4>
+          <p>Establishing an intuitive and browseable information architecture is vital to making documentation discoverable. It's the minimum requirement to enable readers to find the information they need about a given feature. A simple way of accomplishing this is establishing a set of topic-based hierarchies to categorize documentation. For example, Dashboard → Account → Account details.</p>
+          <p>Identify gaps in your documentation structure (or information architecture). Plan your documentation structure around the user journey — think about what the user needs to see and the logical progression they take when looking for answers in your docs.</p>
+    
+          <h4>Usability</h4>
+          <p>In addition to establishing an information architecture to organize documentation better, it's essential to put some focus on usability. Usability, in the context of documentation, means structuring single-page documentation with ease of use in mind. Little things like syntax highlighting code snippets, descriptive animated GIFs, and a “More info” section can make documentation easier to read and parse.</p>
+    
+          <h4>Search</h4>
+          <p>Indexing documentation and providing a mechanism to search it can make up for any failings in the other two categories. Search <em>is</em> the most common definition of “discoverability.”</p>
+    
+          <h3>Next step</h3>
+          <p><a href="./docs_as_code.html">Follow the Docs-as-Code strategy</a></p>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Write Technically</h3>
+          <a href="./index.html">Overview</a>
+          <h4>Getting Started</h4>
+          <ul>
+            <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+            <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+            <li><a href="./write_docs.html">Write your docs</a></li>
+            <li><a href="./test_docs.html">Test your documentation</a></li>
+            <li><a href="./review_docs.html">Documentation reviews</a></li>
+          </ul>
+          <h4>Style Guidelines</h4>
+          <ul>
+            <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+            <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+            <li><a href="./interface_standards.html">Interface items and standards</a></li>
+            <li><a href="./language_and_choices.html">Language and choices</a></li>
+            <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+          </ul>
+          <h4>Tutorials</h4>
+          <ul>
+            <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+            <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+          </ul>
+          <h4>Reference</h4>
+          <ul>
+            <li><a href="./recommended_extensions.html">Recommended VS Code extensions</a></li>
+            <li><a href="./helpful_resources.html">Helpful resources</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>

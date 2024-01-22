@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Write Technically | Grammar and Mechanics</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu">
+      <h3>Write Technically</h3>
+      <a href="./index.html">Overview</a>
+      <h4>Getting Started</h4>
+      <ul>
+        <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+        <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+        <li><a href="./write_docs.html">Write your docs</a></li>
+        <li><a href="./test_docs.html">Test your documentation</a></li>
+        <li><a href="./review_docs.html">Documentation reviews</a></li>
+      </ul>
+      <h4>Style Guidelines</h4>
+      <ul>
+        <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+        <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+        <li><a href="./interface_standards.html">Interface items and standards</a></li>
+        <li><a href="./language_and_choices.html">Language and choices</a></li>
+        <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+      </ul>
+      <h4>Tutorials</h4>
+      <ul>
+        <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+        <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+      </ul>
+      <h4>Reference</h4>
+      <ul>
+        <li><a href="./recommended_extensions">Recommended VS Code extensions</a></li>
+        <li><a href="./helpful_resources.html">Helpful resources</a></li>
+      </ul>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">Grammar and mechanics</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Follow these conventions for capitalization, emphasis, contractions, punctuation, tables, and graphics.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <h3>Capitalization</h3>
+          <p>Write the name of the window, tab, field, menu option, and so on as it's displayed in the application, but keep such words as field, tab, and window in lowercase.</p>
+    
+          <h3>Contractions</h3>
+          <p>Use contractions freely. You're writing for readers, not for an AI.</p>
+    
+          <h3>Default values</h3>
+          <p>Indicate that a field defaults to a value, and specify the default value when possible. When possible, explain when and why a default should or should not be changed.</p>
+    
+          <h3>Emphasis</h3>
+          <ul>
+            <li>Use <em>italics</em> for emphasis, rather than capital letters, underlining, quotes, or bolding text. Only use bold when <em>no other option exists</em>.</li>
+            <li>Use bold for UI elements such as checkboxes, buttons, tabs, and field names.</li>
+            <li>Do *not* bold or capitalize the word *not*.</li>
+          </ul>
+    
+          <h3>Formatting</h3>
+          <ul>
+            <li>For external links, the title should reflect how it's displayed on the page or link itself.</li>
+            <li>Hyperlink *all* email addresses. Avoid linking a specific person's email address. Use a distribution list when available.</li>
+            <li>Do not personify/anthropomorphize software projects. For example, "The project actually knows both realized amounts".</li>
+          </ul>
+    
+          <h3>Headings</h3>
+          <p>All headings should be in sentence case:</p>
+          <table class="table">
+            <tr>
+              <td class="center"><strong>Use</strong></td>
+              <td class="center"><strong>Don't Use</strong></td>
+            </tr>
+            <tr>
+              <td>Balance sheet substantiation tasks by role</td>
+              <td>Balance Sheet Substantiation Tasks by Role</td>
+            </tr>
+          </table>
+    
+          <h3>Introductions for pages, lists, and other items</h3>
+          <p>Every page needs an introduction. An introductory sentence is also required before lists, steps, and tables. Avoid long words or extraneous phrases, such as "do the following". Let a colon do the work.</p>
+          <ul>
+            <li>Don't introduce hyperlinks if they're self-explanatory.</li>
+            <li>The wording of links doesn't have to match the topic it jumps to, but it should be close enough for users to know they went to the right place.</li>
+            <li>When possible, link directly to a topic using existing text. Avoid using "see".</li>
+          </ul>
+    
+          <h3>Numerals</h3>
+          <p><em>Always</em> spell out numerals zero through nine unless you're referring to a specific step in a procedure:</p>
+          <table>
+            <tr>
+              <td class="center"><strong>Use</strong></td>
+              <td class="center"><strong>Don't Use</strong></td>
+            </tr>
+            <tr>
+              <td>three</td>
+              <td>3</td>
+            </tr>
+          </table>
+          <p>Use parentheses when specifying a negative number:</p>
+          <table>  
+            <tr>
+              <td class="center"><strong>Use</strong></td>
+              <td class="center"><strong>Don't Use</strong></td>
+            </tr>
+            <tr>
+              <td>(10,000)</td>
+              <td>-$10,000</td>
+            </tr>
+          </table>
+    
+          <h3>Punctuation</h3>
+          <p>Use serial/Oxford commas.</p>
+          <table>  
+            <tr>
+              <td class="center"><strong>Use</strong></td>
+              <td class="center"><strong>Don't Use</strong></td>
+            </tr>
+            <tr>
+              <td>Select the appropriate checkboxes (business unit, division, entity, and segment).</td>
+              <td>Select the appropriate checkboxes (business unit, division, entity and segment).</td>
+            </tr>
+          </table>
+          <p>Use colons instead of dashes to introduce items:</p>
+          <table>
+            <tr>
+              <td class="center"><strong>Use</strong></td>
+              <td class="center"><strong>Don't Use</strong></td>
+            </tr>
+            <tr>
+              <td>To retrieve finalized statements in the task workflow:</td>
+              <td>To retrieve finalized statements in the task workflow —</td>
+            </tr>
+          </table>
+          <p>Capitalize the first word after a colon:</p>
+          <table>
+            <tr>
+              <td class="center"><strong>Use</strong></td>
+              <td class="center"><strong>Don't Use</strong></td>
+            </tr>
+            <tr>
+              <td>**Note**: Always capitalize the first word after the colon.</td>
+              <td>**Note**: always capitalize the first word after the colon.</td>
+            </tr>
+          </table>
+          <p>Place periods <em>outside</em> of quotation marks when they aren't part of a direct quote.</p>
+          <table>
+            <tr>
+              <td class="center"><strong>Use</strong></td>
+              <td class="center"><strong>Don't Use</strong></td>
+            </tr>
+            <tr>
+              <td>This topic lists the available columns and its source for Stripe's "Debt roll forward".</td>
+              <td>This topic lists the available columns and its source for Stripe's "Debt roll forward."</td>
+            </tr>
+          </table>
+          <ul>
+            <li>Don't use bold punctuation, such as the period after the bolded statement.</li>
+            <li>Include a period at the end of items in a bulleted list with more than three words. Keep each list consistent. If a period is added, add it to all items, and vice versa.</li>
+          </ul>
+    
+          <h3>Tables</h3>
+          <p>Column headings should be in sentence case and explain the contents within each column.</p>
+    
+          <h3>More info</h3>
+          <ul class="menu">
+            <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+            <li><a href="./language_and_choices.html">Language and word choices</a></li>
+            <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+            <li><a href="./interface_standards.html">Interface items and standards</a></li>
+          </ul>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Write Technically</h3>
+          <a href="./index.html">Overview</a>
+          <h4>Getting Started</h4>
+          <ul>
+            <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+            <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+            <li><a href="./write_docs.html">Write your docs</a></li>
+            <li><a href="./test_docs.html">Test your documentation</a></li>
+            <li><a href="./review_docs.html">Documentation reviews</a></li>
+          </ul>
+          <h4>Style Guidelines</h4>
+          <ul>
+            <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+            <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+            <li><a href="./interface_standards.html">Interface items and standards</a></li>
+            <li><a href="./language_and_choices.html">Language and choices</a></li>
+            <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+          </ul>
+          <h4>Tutorials</h4>
+          <ul>
+            <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+            <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+          </ul>
+          <h4>Reference</h4>
+          <ul>
+            <li><a href="./recommended_extensions.html">Recommended VS Code extensions</a></li>
+            <li><a href="./helpful_resources.html">Helpful resources</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Write Technically | Docs-as-Code</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu">
+      <h3>Write Technically</h3>
+      <a href="./index.html">Overview</a>
+      <h4>Getting Started</h4>
+      <ul>
+        <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+        <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+        <li><a href="./write_docs.html">Write your docs</a></li>
+        <li><a href="./test_docs.html">Test your documentation</a></li>
+        <li><a href="./review_docs.html">Documentation reviews</a></li>
+      </ul>
+      <h4>Style Guidelines</h4>
+      <ul>
+        <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+        <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+        <li><a href="./interface_standards.html">Interface items and standards</a></li>
+        <li><a href="./language_and_choices.html">Language and choices</a></li>
+        <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+      </ul>
+      <h4>Tutorials</h4>
+      <ul>
+        <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+        <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+      </ul>
+      <h4>Reference</h4>
+      <ul>
+        <li><a href="./recommended_extensions">Recommended VS Code extensions</a></li>
+        <li><a href="./helpful_resources.html">Helpful resources</a></li>
+      </ul>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">Use the Docs-as-Code strategy</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">For external developers and partners, the documentation is the project: it's equally important to teach users how to use the project as it is to develop it.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <p>This means integrating your documentation into your repositories, requiring documentation for all new features, and reviewing that documentation before any merge requests can be approved.</p>
+          <p>This topic explains how to bundle project and documentation development using the same Tools-as-Code for authoring, versioning, and publishing content. This methodology is called Docs-as-Code.</p>
+    
+          <h3>Why use Docs-as-Code?</h3>
+          <p>The best way to guarantee project efficiency is to ensure all code changes are being properly documented at the time of release while your knowledge is still fresh. Docs-as-Code is a broader concept than just that — it also includes improving the ways of working between developers and documentation writers.</p>
+    
+          <h3>Use workflow management tools to scale</h3>
+          <p>Use tools like <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a> and <a href="https://gitlab.com/" target="_blank">GitLab</a> to tie development with documentation and create safeguards to ensure that all feature changes are being considered for documentation.</p>
+    
+          <h4>Jira workflow check</h4>
+          <p>Use your best judgment to determine which tickets need new documentation. New features and significant code changes require supporting documentation, while minor bug fixes may <em>not</em> warrant a documentation change.</p>
+          <p>Be mindful that it's much easier to document something as it's happening rather than trying to document it weeks or months later.</p>
+          <p>Most documentation should be written in Markdown, in the same repository as the main project. All other documentation — such as high-level architecture and collaborative information meant for an internal audience, can be written in an appropriate place in <a href="https://www.atlassian.com/software/confluence" target="_blank">Confluence</a>.</p>
+          <p>This process encourages developers to think more proactively and ensures that any produced documentation is added to Jira. This creates easier access for anyone looking for documentation in a Jira ticket after completion.</p>
+    
+          <h4>GitLab MR check</h4>
+          <p>You can use these checklists to monitor merge requests and ensure new features or code changes have applicable documentation if necessary. If a user tries to merge without addressing documentation, you can reject their MR until they do.</p>
+          <p>These checklists have broader use and can be used for testing purposes or anything else in your project that should be tracked for each merge request. Checklists will automatically populate in merge requests to ensure each request follows proper protocols.</p>
+          <p>Here's a simple MR checklist for inspiration:</p>
+          <ul>
+            <li>An MR description is included.</li>
+            <li>Code changes have been tested.</li>
+            <li>Added the applicable documentation.</li>
+          </ul>
+          <p>There are two ways to add a merge request checklist to GitLab: through the GitLab UI or by using Markdown files.</p>
+    
+          <h5>GitLab UI</h5>
+          <p>Follow these steps to enable MR checks through the GitLab UI:</p>
+          <ol>
+            <li>Navigate to your repository in GitLab, hover over <strong>Settings</strong>, and click <strong>Merge requests</strong></li>
+              <img src="../img/gitlab-ui-settings.png" alt="Select the Merge requests tab under Settings in the GitLab UI." />
+            <li>Enter your checklist in the <strong>Default description template for merge requests</strong> field:</li>
+              <img src="../img/gitlab-mr-description-template.png" alt="Create a checklist in the Default description template for merge requests field in the GitLab UI." />
+              <p>You can add typical Markdown formatting in this box by using square brackets (<code>[ ]</code>) to show a checkbox in the checklist.</p>
+          </ol>
+    
+          <h5>Markdown files</h5>
+          <p>Follow these steps to enable MR checks with Markdown files:</p>
+          <ol>
+            <li>In the root directory of your repository, create a new directory called <code>.gitlab</code>:</li>
+              <img src="../img/markdown-gitlab-dir.png" alt="Create a new directory in Visual Studio Code and call it .gitlab" />
+            <li>In the <code>.gitlab</code> directory, create a new directory called <code>merge_request_templates</code>:</li>
+              <img src="../img/markdown-mr-templates-dir.png" alt="Create a new directory in the .gitlab directory and call it merge_request_templates." />
+            <li>Add Markdown files into the <code>merge_request_templates</code> directory:</li>
+              <img src="../img/markdown-add-files.png" alt="Add Markdown files in the merge_request_templates directory in VS Code." />
+            <li>Navigate to your repository in GitLab and click <strong>Merge requests</strong>.</li>
+              <img src="../img/gitlab-merge-requests.png" alt="Select the Merge requests tab in the GitLab UI." />
+            <li>Click <strong>New merge request</strong>.</li>
+            <li>Select a <strong>Source branch</strong> and a <strong>Target branch</strong>.</li>
+            <li>Select the <strong>Choose a template</strong> drop-down menu:</li>
+              <img src="../img/gitlab-select-template.png" alt="Select the Choose a template drop-down in the New Merge Request window of the GitLab UI." />
+              <p>The template populates in the MR description upon selection:</p>
+              <img src="..img/gitlab-template-description.PNG" alt="View the Description text populated by the merge request template in the GitLab UI." />
+          </ol>
+    
+          <h3>Docs-as-Code and your team</h3>
+          <p>You should now have a better view of how to document your project sustainably. These suggestions and guidelines are just that. Use what works best for your team. The most important thing to remember is to have a documentation strategy for your project — with a plan and a roadmap to execute. The sooner you introduce documentation into your development process, the easier it will be to maintain.</p>
+    
+          <h3>Next step</h3>
+          <p><a href="./write_docs.html">Write your docs</a></p>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Write Technically</h3>
+          <a href="./index.html">Overview</a>
+          <h4>Getting Started</h4>
+          <ul>
+            <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+            <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+            <li><a href="./write_docs.html">Write your docs</a></li>
+            <li><a href="./test_docs.html">Test your documentation</a></li>
+            <li><a href="./review_docs.html">Documentation reviews</a></li>
+          </ul>
+          <h4>Style Guidelines</h4>
+          <ul>
+            <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+            <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+            <li><a href="./interface_standards.html">Interface items and standards</a></li>
+            <li><a href="./language_and_choices.html">Language and choices</a></li>
+            <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+          </ul>
+          <h4>Tutorials</h4>
+          <ul>
+            <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+            <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+          </ul>
+          <h4>Reference</h4>
+          <ul>
+            <li><a href="./recommended_extensions.html">Recommended VS Code extensions</a></li>
+            <li><a href="./helpful_resources.html">Helpful resources</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>

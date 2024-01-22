@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Steven Clements | Write Technically</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu">
+      <h3>Write Technically</h3>
+      <a href="./index.html">Overview</a>
+      <h4>Getting Started</h4>
+      <ul>
+        <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+        <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+        <li><a href="./write_docs.html">Write your docs</a></li>
+        <li><a href="./test_docs.html">Test your documentation</a></li>
+        <li><a href="./review_docs.html">Documentation reviews</a></li>
+      </ul>
+      <h4>Style Guidelines</h4>
+      <ul>
+        <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+        <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+        <li><a href="./interface_standards.html">Interface items and standards</a></li>
+        <li><a href="./language_and_choices.html">Language and choices</a></li>
+        <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+      </ul>
+      <h4>Tutorials</h4>
+      <ul>
+        <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+        <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+      </ul>
+      <h4>Reference</h4>
+      <ul>
+        <li><a href="./recommended_extensions">Recommended VS Code extensions</a></li>
+        <li><a href="<?php echo URL_ROOT; ?>/writing/helpful_resources">Helpful resources</a></li>
+      </ul>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">Technical writing overview</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Documentation is an integral part of business management and software development. It's essential for project adoption.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <p>These guides and tutorials describe how to create high-quality documentation for your project, regardless of your skill level as an engineer.</p>
+          
+          <h3>Why is documentation important?</h3>
+          <ul>
+            <li><strong>Future-proof your project</strong>: Prevent knowledge loss if a critical member leaves the team and create a strong bedrock for ongoing support.</li>
+            <li><strong>Faster onboarding</strong>: New clients and project teams can more easily integrate with a team that maintains accurate documentation without pinging more senior team members for help.</li>
+            <li><strong>Share with clients</strong>: Provide enhanced transparency for clients by tying documentation with development, allowing them to follow along with your progress easily.</li>
+            <li><strong>Prepare your project for external readers</strong>: If it's externally facing, it's only as valuable as its external documentation. Ensure that your project has an excellent user experience by investing time in documentation.</li>
+          </ul>
+    
+          <h3>Start here</h3>
+          <ul class="menu">
+            <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+            <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+            <li><a href="./write_docs.html">Write your docs</a></li>
+            <li><a href="./best_practices.html">Common style guidelines</a></li>
+          </ul>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Write Technically</h3>
+          <a href="./index.html">Overview</a>
+          <h4>Getting Started</h4>
+          <ul>
+            <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+            <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+            <li><a href="./write_docs.html">Write your docs</a></li>
+            <li><a href="./test_docs.html">Test your documentation</a></li>
+            <li><a href="./review_docs.html">Documentation reviews</a></li>
+          </ul>
+          <h4>Style Guidelines</h4>
+          <ul>
+            <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+            <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+            <li><a href="./interface_standards.html">Interface items and standards</a></li>
+            <li><a href="./language_and_choices.html">Language and choices</a></li>
+            <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+          </ul>
+          <h4>Tutorials</h4>
+          <ul>
+            <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+            <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+          </ul>
+          <h4>Reference</h4>
+          <ul>
+            <li><a href="./recommended_extensions.html">Recommended VS Code extensions</a></li>
+            <li><a href="./helpful_resources.html">Helpful resources</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>

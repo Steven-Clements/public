@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Write Technically | Write Your Docs</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu">
+      <h3>Write Technically</h3>
+      <a href="./index.html">Overview</a>
+      <h4>Getting Started</h4>
+      <ul>
+        <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+        <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+        <li><a href="./write_docs.html">Write your docs</a></li>
+        <li><a href="./test_docs.html">Test your documentation</a></li>
+        <li><a href="./review_docs.html">Documentation reviews</a></li>
+      </ul>
+      <h4>Style Guidelines</h4>
+      <ul>
+        <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+        <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+        <li><a href="./interface_standards.html">Interface items and standards</a></li>
+        <li><a href="./language_and_choices.html">Language and choices</a></li>
+        <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+      </ul>
+      <h4>Tutorials</h4>
+      <ul>
+        <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+        <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+      </ul>
+      <h4>Reference</h4>
+      <ul>
+        <li><a href="./recommended_extensions">Recommended VS Code extensions</a></li>
+        <li><a href="./helpful_resources.html">Helpful resources</a></li>
+      </ul>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">Write your docs</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Writing can be difficult. Some people put a mark or phrase in a new notebook to <em>avoid</em> starting with a completely clean slate.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <p>At this point, you should know what content exists and what still needs to be written. Let's get writing!</p>
+    
+          <h3>Get ready to write</h3>
+          <p>Follow Markdown guidelines and best practices to ensure your team is clear about the organization and governance of your content. When you're dealing with a large quantity of content that you need to create or reorganize, try asking these questions:</p>
+          <ul>
+            <li>Who is the anticipated audience for this information? For example, new hires or senior staff looking for guidance?</li>
+            <li>What are the current pain points with the content?</li>
+            <li>Can individual sections of each document stand alone? (Can you break documents down into smaller chunks for quicker reference?)</li>
+          </ul>
+    
+          <h3>Suggested categories</h3>
+          <p>These categories work well for organizing most software documentation logically:</p>
+          <ul>
+            <li><strong>Getting started</strong>: Explain how to get started with your project's core use case.</li>
+            <li><strong>Overview</strong>: A landing and marketing page about your project.</li>
+            <li><strong>Concepts</strong>: Overview, conceptual, or narrative-type topics.</li>
+            <li><strong>Tutorials</strong>: Task-oriented or step-based topics.</li>
+            <li><strong>Support</strong>: Information about troubleshooting common problems and who to contact with questions.</li>
+            <li><strong>Reference</strong>API calls and other information people need to work with your project.</li>
+            <li><strong>Case studies</strong>: Examples of your project in action.</li>
+            <li><strong>Release notes</strong>: Brief summaries of the features and updates accompanying a release.</li>
+          </ul>
+    
+          <h4>Getting started</h4>
+          <p>Getting started pages assist developers and users in getting up-and-running. Getting started pages are created in series, with large tasks broken down into sub-tasks. Avoid creating more than one getting started series for each project. The getting started series should include:</p>
+          <ul>
+            <li>A getting started overview page, including an introduction to the steps ahead and prerequisites to get them done. If the steps are quick enough, everything can be on the same page. Otherwise, break them up.</li>
+            <li>Required access, applications, and dependencies.</li>
+            <li>Information about IDE(s), if applicable.</li>
+            <li>A page for every significant task, broken down into sub-tasks.</li>
+          </ul>
+    
+          <h4>Concept</h4>
+          <p>Concept pages provide short, high-level information:</p>
+          <ul>
+            <li>Why should the developer or user care about this information? (What's in it for me?)</li>
+            <li>How does it relate to what they're doing?</li>
+            <li>Is there anything they need to be aware of before starting?</li>
+            <li>Does it impact anything else?</li>
+            <li>What additional pages are relevant?</li>
+          </ul>
+    
+          <h4>Reference</h4>
+          <p>Use reference topics to provide technical information and definitions that support a user in performing a task. A glossary topic lists words and acronyms, but a reference topic lists project specifications, parameters, methods, functions, and other information that needs to be <em>referenced</em>. Reference topics usually contain tables with names, descriptions, and code examples.</p>
+    
+          <h4>Support and troubleshooting</h4>
+          <p>Create an email distribution list for receiving support questions. Include that distribution list, instructions on creating a support ticket, and any other contact information you want your users to know. Ensure this information matches the info on your project overview page.</p>
+          <p>For the troubleshooting section, include:</p>
+          <ul>
+            <li>The background or cause.</li>
+            <li>How to determine.</li>
+            <li>The solutions or workaround (if a solution isn't available, include a workaround).</li>
+          </ul>
+    
+          <h4>Case studies</h4>
+          <p>Adding case studies to content gives your users a feel for how people use your project, and how they can potentially use it. Consider these headings in the template when putting together your case studies (or even better, have your clients help you):</p>
+          <ul>
+            <li>Problem statement.</li>
+            <li>Challenges and opportunities.</li>
+            <li>How did you leverage the platform well?</li>
+            <li>What worked well?</li>
+            <li>What could use improvements?</li>
+            <li>Technical contact's email address (or distribution list).</li>
+          </ul>
+    
+          <h4>Release notes</h4>
+          <p>Release notes must accompany an application upgrade or release.</p>
+    
+          <h4>Changelogs</h4>
+          <p>A changelog is a release-by-release listing of what's been added, changed, or removed in each area of your project. It's often more granular than release notes.</p>
+    
+          <h4>About FAQs</h4>
+          <p>Avoid creating frequently asked question (FAQ) topics. Questions are frequently asked for a short time and are difficult to maintain.</p>
+          <p>If an FAQ page <em>is</em> necessary, limit it to one page for each project and limit the number of questions to 10. Frequently check the page for required updates and grooming.</p>
+    
+          <div class="tip">
+            <h4><i class="fas fa-check-circle"></i> Quick tip</h4>
+            <p>Answers in the FAQ can often be placed within a step in a tutorial page to clarify or inform about any potential questions.</p>
+          </div>
+    
+          <h3>Next step</h3>
+          <p><a href="./test_docs.html">Test your documentation</a></p>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Write Technically</h3>
+          <a href="./index.html">Overview</a>
+          <h4>Getting Started</h4>
+          <ul>
+            <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+            <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+            <li><a href="./write_docs.html">Write your docs</a></li>
+            <li><a href="./test_docs.html">Test your documentation</a></li>
+            <li><a href="./review_docs.html">Documentation reviews</a></li>
+          </ul>
+          <h4>Style Guidelines</h4>
+          <ul>
+            <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+            <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+            <li><a href="./interface_standards.html">Interface items and standards</a></li>
+            <li><a href="./language_and_choices.html">Language and choices</a></li>
+            <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+          </ul>
+          <h4>Tutorials</h4>
+          <ul>
+            <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+            <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+          </ul>
+          <h4>Reference</h4>
+          <ul>
+            <li><a href="./recommended_extensions.html">Recommended VS Code extensions</a></li>
+            <li><a href="./helpful_resources.html">Helpful resources</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>

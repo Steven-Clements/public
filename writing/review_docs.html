@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Write Technically | Review Your Docs</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu">
+      <h3>Write Technically</h3>
+      <a href="./index.html">Overview</a>
+      <h4>Getting Started</h4>
+      <ul>
+        <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+        <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+        <li><a href="./write_docs.html">Write your docs</a></li>
+        <li><a href="./test_docs.html">Test your documentation</a></li>
+        <li><a href="./review_docs.html">Documentation reviews</a></li>
+      </ul>
+      <h4>Style Guidelines</h4>
+      <ul>
+        <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+        <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+        <li><a href="./interface_standards.html">Interface items and standards</a></li>
+        <li><a href="./language_and_choices.html">Language and choices</a></li>
+        <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+      </ul>
+      <h4>Tutorials</h4>
+      <ul>
+        <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+        <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+      </ul>
+      <h4>Reference</h4>
+      <ul>
+        <li><a href="./recommended_extensions">Recommended VS Code extensions</a></li>
+        <li><a href="./helpful_resources.html">Helpful resources</a></li>
+      </ul>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">Documentation reviews</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Consistent, thorough, and accurate reviews are essential to writing good documentation.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <p>Documentation reviews are the final step (and one of the most important) of the publication process.</p>
+          <p>Use your <a href="./docs_as_code.html">Docs-as-Code</a> process to plan a review protocol for your docs. Consider these controls as a starting point:</p>
+          <ul>
+            <li>Set up a peer-review cycle with your team or clients.</li>
+            <li>Review the content with subject-matter experts (SMEs).</li>
+            <li>Use tools to help you review your content.</li>
+            <li>Test content with your users.</li>
+            <li>Perform scheduled content audits.</li>
+          </ul>
+    
+          <h3>Review other writer's docs</h3>
+          <p>When you review docs for other members of your team (or other writers), you should understand the difference between <em>proofreading</em> and <em>providing feedback</em>.</p>
+          <ul>
+            <li><em>Proofreading</em> is performed to evaluate a text for correctness and mechanical accuracy. This includes evaluating a text's grammar, spelling, <a href="./language_and_choices.html">Word choices</a>, word omissions, formatting, spacing, punctuation, consistency, and other errors.</li>
+            <li><em>Feedback</em> is provided to evaluate the overall effectiveness of the text's content — for instance, to offer feedback on how well the writer used structure to convey the information to their users.</li>
+          </ul>
+          <p>Both tools are beneficial for your writing. However, they should be used in the appropriate circumstances. Docs that are mechanically accurate and well-written, but lack the proper structure to address user needs, would benefit from editorial feedback to address these shortcomings. Docs that contain typographical errors, but convey information effectively, may only need proofreading for clarity and accuracy. In any case, both methods should be used for a complete and effective review of a text.</p>
+          <p>Consider a hierarchical approach when reviewing documentation — address the structural issues and technical accuracy with feedback before addressing typographical errors through proofreading.</p>
+    
+          <h4>Review tools</h4>
+          <p>There are several tools you can use to review content quickly and effectively:</p>
+          <ul>
+            <li><strong>GitLab repo merge requests and reviews</strong>: Use the comments and suggestions feature to easily provide feedback and proofread docs.</li>
+            <li><a href="https://app.grammarly.com/" target="_blank">Grammarly</a>: An online tool and resource for quickly checking grammar and other typographical errors.</li>
+            <li><a href="http://www.markdownpad.com/" target="_blank">MarkdownPad</a>: A tool to help edit, review, and convert Markdown files. Use MarkdownPad to diagnose any errors present in Markdown code that may cause document rendering issues.</li>
+            <li><strong>Collaboration tools</strong>:</li>
+            <ul class="inner-ul">
+              <li>Google Docs</li>
+              <li>Microsoft 365</li>
+              <li>Dropbox Paper</li>
+              <li>Jupyter Notebook</li>
+            </ul>
+          </ul>
+    
+          <h4>Review GitLab merge requests</h4>
+          <p>Use the merge request <em>comment</em> feature to review docs in your web browser. To submit a review to a GitLab merge request:</p>
+          <ol>
+            <li>Go to the merge request that needs to be reviewed.</li>
+            <ul>
+              <li>In GitLab, find merge requests assigned to you for review by clicking the <strong>merge request</strong> icon in the top-right corner of the screen, and click <strong>Review requests</strong></li>
+                <img src="../img/gitlab-reviews.png" alt="Select Review requests from the merge request drop-down menu in the GitLab UI." />
+              <li>You can also see merge requests assigned to you by clicking <strong>Assigned</strong> from the merge request drop-down menu.</li>
+                <img src="../img/gitlab-assigned.png" alt="Select Assigned from the merge request drop-down menu in the GitLab UI." />
+            </ul>
+            <li>Select the **Changes** tab:</li>
+              <img src="../img/gitlab-changes.png" alt="Select the Changes tab on the merge request in the GitLab UI." />
+              <p>The latest version of the text displays by default. If the text doesn't display the latest version, click <strong>Show latest version</strong>.</p>
+            <li>Hover your cursor over a code line and click <strong>comment</strong> from the left side of the code line to leave a comment or suggestion:</li>
+              <img src="../img/gitlab-comment.png" alt="Click Comment on a code line in a merge request in the GitLab UI." />
+            <ul>
+              <li>To leave a comment, write the comment in the displayed text box and click <strong>Add comment now</strong></li>
+                <img src="../img/gitlab-add-comment.PNG" alt="Click add comment now to submit a new comment in the GitLab UI." />
+              <li>To leave a suggestion, click <strong>suggestion</strong> and edit the line. Click <strong>Add comment now</strong> once you're finished:</li>
+                <img src="../img/gitlab-add-suggestion.png" alt="Click the Suggestion icon to make a suggestion in the GitLab UI." />
+            </ul>
+          </ol>
+          <div class="tip">
+            <h4><i class="fas fa-check-circle"></i> Quick tip</h4>
+            <p>Click <strong>Start a review</strong> instead of <strong>Add comment now</strong> to add comments and/or suggestions without immediately submitting them to the merge request assignee. When you're finished reviewing, click <strong>Submit</strong> to add all comments and/or suggestions and notify the merge request assignee that the review is complete.</p>
+          </div>
+    
+          <h3>Review content with clients and SMEs</h3>
+          <p>Review your documentation with clients and SMEs to make sure your documentation is useful and accurate.</p>
+          <ol>
+            <li>Identify the right reviewers. These reviewers may be project leads, bar raisers, or SMEs who can verify technical details.</li>
+            <li>Ask them for specific feedback:</li>
+            <ul>
+              <li>What else should the reader know about the topic?</li>
+              <li>Are the step-by-step instructions clear?</li>
+              <li>Is it technically accurate?</li>
+            </ul>
+            <li>Give them a deadline, and send out a reminder email if missed.</li>
+            <li>Integrate their feedback and, if reviewers are willing, have them take another look at the docs.</li>
+            <li>Perform usability testing. Find a developer unfamiliar with the content and shadow them through your documentation. Can they successfully use your documentation to achieve their goals? What pain points are still there?</li>
+            <li>Integrate final feedback.</li>
+          </ol>
+          <p>After implementing feedback from your initial review session(s) with clients and SMEs, do a final review. Follow the same steps outlined above and ask previous reviewers to pay attention to your changes based on their feedback. You can also ask other people who have not looked at your documentation for a fresh perspective on what you've done.</p>
+    
+          <h3>Prepare to publish</h3>
+          <p>Congrats! You wrote a full set of documentation for your API or software project and you're ready to publish it in a live environment!</p>
+    
+          <h3>More info</h3>
+          <ul class="menu">
+            <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+            <li><a href="./review_responsibilities.html">Merge request responsibilities</li>
+            <li><a href="./recommended_extensions.html">Recommended VS Code extensions</a></li>
+            <li><a href="./helpful_resources.html">Helpful resources</a></li>
+          </ul>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Write Technically</h3>
+          <a href="./index.html">Overview</a>
+          <h4>Getting Started</h4>
+          <ul>
+            <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+            <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+            <li><a href="./write_docs.html">Write your docs</a></li>
+            <li><a href="./test_docs.html">Test your documentation</a></li>
+            <li><a href="./review_docs.html">Documentation reviews</a></li>
+          </ul>
+          <h4>Style Guidelines</h4>
+          <ul>
+            <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+            <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+            <li><a href="./interface_standards.html">Interface items and standards</a></li>
+            <li><a href="./language_and_choices.html">Language and choices</a></li>
+            <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+          </ul>
+          <h4>Tutorials</h4>
+          <ul>
+            <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+            <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+          </ul>
+          <h4>Reference</h4>
+          <ul>
+            <li><a href="./recommended_extensions.html">Recommended VS Code extensions</a></li>
+            <li><a href="./helpful_resources.html">Helpful resources</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>

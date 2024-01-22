@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Write Technically | Test Your Docs</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu">
+      <h3>Write Technically</h3>
+      <a href="./index.html">Overview</a>
+      <h4>Getting Started</h4>
+      <ul>
+        <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+        <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+        <li><a href="./write_docs.html">Write your docs</a></li>
+        <li><a href="./test_docs.html">Test your documentation</a></li>
+        <li><a href="./review_docs.html">Documentation reviews</a></li>
+      </ul>
+      <h4>Style Guidelines</h4>
+      <ul>
+        <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+        <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+        <li><a href="./interface_standards.html">Interface items and standards</a></li>
+        <li><a href="./language_and_choices.html">Language and choices</a></li>
+        <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+      </ul>
+      <h4>Tutorials</h4>
+      <ul>
+        <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+        <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+      </ul>
+      <h4>Reference</h4>
+      <ul>
+        <li><a href="./recommended_extensions">Recommended VS Code extensions</a></li>
+        <li><a href="./helpful_resources.html">Helpful resources</a></li>
+      </ul>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">Test your documentation</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Usability testing is a critical component of healthy and accurate documentation.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <p>By conducting user scenarios with testers that are unfamiliar with the project, you can identify knowledge gaps that may not have appeared in internal reviews.</p>
+          <p>Below, you'll find guidelines and best practices for holding usability tests.</p>
+    
+          <h3>Outline your project background and goals</h3>
+          <p>Briefly cover who's responsible for tests and what you want them to accomplish. These can be general goals, such as ensuring documentation is accurate and easy to follow.</p>
+    
+          <h3>Note the prerequisites</h3>
+          <p>Include all setup steps and links a tester might need to complete testing tasks. Link to your documentation and the project you're testing (such as an API reference). Ideally, include a testing sandbox where testers can play around and make mistakes. If there's additional content that a tester may need but isn't strictly necessary, you may want to create another section for resources.</p>
+    
+          <h3>Establish success criteria</h3>
+          <p>Identify what you want to accomplish by holding usability tests. You want testers to achieve basic developer tasks by reading your documentation. Representatives from the related documentation and API teams (if applicable) should also observe the test and note any gaps.</p>
+    
+          <h3>Write your test cases</h3>
+          <p>These are the scenarios your users will test. Approach these from an external developer's perspective: how would I accomplish a task if I'd never seen this documentation before? Try not to lead the reader into seeing what you want them to see. For example:</p>
+    
+          <div class="example">
+            <h4><i class="fas fa-chalkboard-user"></i> Example</h4>
+            <p>You're on a new team working on integrated credit card APIs, but you don't know much about credit cards themselves. Can you find relevant information in these docs that explain what a credit card is and how it works?</p>
+          </div>
+    
+          <h3>Lay out your testing schedule</h3>
+          <p>Make your testing schedule available and tag your testers and administrators in <a href="https://www.atlassian.com/software/confluence" target="_blank">Confluence</a>. This keeps everyone on the same page and helps you organize feedback.</p>
+    
+          <h3>Document your testing observations</h3>
+          <p>When hosting your usability test, encourage your tester to vocalize their thought process as much as possible. Capture as many of these observations in your notes as possible, so you can understand how an outsider to your project digests your documentation. Throughout multiple tests, you'll likely find recurring trends or observations that you can act on and improve your docs.</p>
+          <p>After your initial round of tests, review your test results and collect feedback with your documentation team and other clients. Refine your documentation and test cases as much as possible, then hold another round of tests. Hopefully, you'll find that your testers have less critical observations and more positive feedback this time. Be sure to thank your testers for participating!</p>
+    
+          <h3>Next step</h3>
+          <p><a href="./review_docs.html">Documentation reviews</a></p>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Write Technically</h3>
+          <a href="./index.html">Overview</a>
+          <h4>Getting Started</h4>
+          <ul>
+            <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+            <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+            <li><a href="./write_docs.html">Write your docs</a></li>
+            <li><a href="./test_docs.html">Test your documentation</a></li>
+            <li><a href="./review_docs.html">Documentation reviews</a></li>
+          </ul>
+          <h4>Style Guidelines</h4>
+          <ul>
+            <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+            <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+            <li><a href="./interface_standards.html">Interface items and standards</a></li>
+            <li><a href="./language_and_choices.html">Language and choices</a></li>
+            <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+          </ul>
+          <h4>Tutorials</h4>
+          <ul>
+            <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+            <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+          </ul>
+          <h4>Reference</h4>
+          <ul>
+            <li><a href="./recommended_extensions.html">Recommended VS Code extensions</a></li>
+            <li><a href="./helpful_resources.html">Helpful resources</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>

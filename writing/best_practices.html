@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Write Technically | Best Practices</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu">
+      <h3>Write Technically</h3>
+      <a href="./index.html">Overview</a>
+      <h4>Getting Started</h4>
+      <ul>
+        <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+        <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+        <li><a href="./write_docs.html">Write your docs</a></li>
+        <li><a href="./test_docs.html">Test your documentation</a></li>
+        <li><a href="./review_docs.html">Documentation reviews</a></li>
+      </ul>
+      <h4>Style Guidelines</h4>
+      <ul>
+        <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+        <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+        <li><a href="./interface_standards.html">Interface items and standards</a></li>
+        <li><a href="./language_and_choices.html">Language and choices</a></li>
+        <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+      </ul>
+      <h4>Tutorials</h4>
+      <ul>
+        <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+        <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+      </ul>
+      <h4>Reference</h4>
+      <ul>
+        <li><a href="./recommended_extensions">Recommended VS Code extensions</a></li>
+        <li><a href="./helpful_resources.html">Helpful resources</a></li>
+      </ul>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">Guidelines and best practices</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Review these guidelines before you begin authoring content.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <h3>Writing best practices</h3>
+          <p>These are general best practices for writing content:</p>
+          <ul>
+            <li>Write content from a 2nd-person perspective. You're explaining to the user what they need to do. Address them as <em>you</em>, not <em>the user</em> or anything else.</li>
+            <li>Shorter is better. Less is more. Write concisely and briefly. If you're unsure, pick the <em>shorter</em> option.</li>
+            <li>Avoid "the following", "above", and "below". Just use a colon to introduce what's next.</li>
+            <li>Use common contractions (isn't, aren't, don't, and so on) to increase readability, or <em>don't</em> use contractions to increase formality. Most importantly, be consistent in enforcing whichever method you choose.</li>
+            <li>Review <a href="./voice_and_tone.html#everyday-language-edl">everyday language (EDL)</a> and <a href="./language_and_choices.html">language choices</a>.</li>
+            <li>Avoid FAQs. Put that information where users need it, such as in the tutorial steps.</li>
+          </ul>
+    
+          <h3>Content organization</h3>
+          <p>Follow these guidelines when organizing your documentation:</p>
+          <ul>
+            <li>Tutorials use <em>numbered steps</em>, because they explain how to complete a task. Use numbered steps for sequential items and bulleted lists for non-sequential items.</li>
+            <li>Use hyphens (<code>-</code>), not asterisks (<code>*</code>), for bullets. Ensure all list items end with a period if even one item contains more than three words.</li>
+            <li>File names must use <em>only</em> lowercase letters and hyphens. <em>No uppercase letters or underscores should be used</em>. Use names that resemble the H1 for the topic (for example, <code>create-new-user.md</code> and <code>create-user-step-1.jpg</code>).</li>
+            <li><em>Don't</em> use HTML, except for the following exceptions:</li>
+            <ul>
+              <li>You can use the <code>&lt;br&gt;</code> tag to force line breaks.</li>
+              <li>You can use the <code>&lt;ul&gt;</code>/<code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code> tags to create bulleted and numbered lists within Markdown tables.</li>
+              <li>You can use HTML entities.</li>
+            </ul>
+          </ul>
+    
+          <h3>Using Markdown</h3>
+          <p>Follow these best practices when writing with Markdown.</p>
+    
+          <h4>UI elements and emphasis</h4>
+          <ul>
+            <li>Only use <strong>bold</strong> to introduce bulleted items and interface/UI elements. Use <em>italics</em> for emphasis.</li>
+            <li>Don't click on tabs. *Select* them. For drop-down menus, use *choose*. For everything else, use *click* and not *click on*:</li>
+              <table class="table">
+                <tr>
+                  <td class="center"><strong>Use</strong></td>
+                  <td class="center"><strong>Don't Use</strong></td>
+                </tr>
+                <tr>
+                  <td>Click <strong>Generate report</strong>.</td>
+                  <td>Click on <strong>Generate report</strong>.</td>
+                </tr>
+                <tr>
+                  <td>Click <strong>Migrate</strong>.</td>
+                  <td>Click the <strong>migrate</strong> button.</td>
+                </tr>
+                <tr>
+                  <td>Select the <strong>Reports</strong> tab.</td>
+                  <td>Click on the <strong>Reports</strong> tab.</td>
+                </tr>
+              </table>
+            <li>Use single asterisks around a word (<code>*</code>) for italics. Don't use underscores (<code>_</code>).</li>
+            <li>Use single backticks for code phrases and terms. Use backticks for phrases that include underscores, as these will otherwise render as italics. (Example: <code>THIS_CODE_PHRASE</code>).</li>
+          </ul>
+    
+          <h4>Headings</h4>
+          <ul>
+            <li>Every topic should start with an H1 (<code>#</code>) and then change sequentially; don't jump from an H2 (<code>##</code>) to an H4 (<code>####</code>).</li>
+            <li>Only one H1 (<code>#</code>) per page. Follow your H1 with an introductory paragraph that explains the topic.</li>
+            <li>Don't use bold for headings. Use pound signs (<code>#</code>).</li>
+            <li>Use up to heading level four when necessary. If you have to go deeper, consider restructuring your docs.</li>
+            <li>Avoid punctuation and links in headings.</li>
+            <li>Headings in the topic and the ToC should be in sentence case (like this sentence). ToC headings should match or resemble the H1 heading for the linked topic.</li>
+            <li>Tutorial headings should start with a verb. Concept and reference topics can be named to match the concept you're describing or the content you're providing for reference.</li>
+          </ul>
+          <table>
+            <tr>
+              <td class="center"><strong>Use</strong></td>
+              <td class="center"><strong>Don't Use</strong></td>
+            </tr>
+            <tr>
+              <td>Create a user</td>
+              <td>How to create a user</td>
+            </tr>
+            <tr>
+              <td>Migrate to AWS</td>
+              <td>AWS migration</td>
+            </tr>
+            <tr>
+              <td>Workflow architecture</td>
+              <td>Understanding the workflow architecture</td>
+            </tr>
+            <tr>
+              <td>Environments</td>
+              <td>List of environments</td>
+            </tr>
+          </table>
+    
+          <h4>Code blocks</h4>
+          <ul>
+            <li>Use fenced code blocks. This means using three backticks to open the code block and three more to close it. For example:</li>
+            <pre><code class="block">```php
+    public function __construct() {
+      $this->user = new User();
+    }
+    ```</code></pre>
+            <li>Make sure you include the language used within the code block after the first backticks. For a list of supported languages, see <a href="https://prismjs.com/#supported-languages" target="_blank">Prism supported languages</a>.</li>
+            <li>Inline code snippets only require a single backtick, for example <code>`line_of_code`</code></li>
+          </ul>
+    
+          <h4>Links</h4>
+          <ul>
+            <li>For links with placeholders that only serve as examples, wrap them in backticks. Otherwise, they may not pass validation tests.</li>
+            <li>When linking to a different topic, use its actual name instead of "click here".</li>
+            <li>Don't leave bare URLs in your Markdown. Make them hyperlinks or wrap them with angle brackets.</li>
+          </ul>
+          <table>
+            <tr>
+              <td class="center"><strong>Use</strong></td>
+              <td class="center"><strong>Don't Use</strong></td>
+            </tr>
+            <tr>
+              <td><code>`[Google](https://google.com)`</code></td>
+              <td><code>[Click here](https://google.com)</code></td>
+            </tr>
+            <tr>
+              <td><code>`&lt;https://google.com&gt;`</code></td>
+              <td><code>https://google.com</code></td>
+            </tr>
+          </table>
+    
+          <h3>Document architecture</h3>
+          <p>Ensure every page has an introductory sentence for *each* heading on the page. You can't have the title of the document, then an H2, for example.</p>
+          <p>Ensure every page has a <em>More info</em> section (or a <em>Next step</em> section for getting started topics) at the end that containing at least two relevant links.</p>
+    
+          <h3>Practical guidance</h3>
+          <p>Follow these best writing practices to ensure your content is clear and concise:</p>
+          <ul>
+            <li>Use headings correctly — they should follow a clear hierarchical structure. Don't repeat heading titles.</li>
+            <li>Use lists for readability — use bulleted lists for a list with unordered entries and a numbered list for sequential items. Don't make your page one giant list, if possible, and avoid nesting deeper than two levels, with three being the max.</li>
+            <li>Use tables to organize information that's referenced by the reader.</li>
+            <li>Write in the second person — refer to the user as <em>you</em>.</li>
+            <li>Avoid "should" or "will happen" statements. Write in the active voice and as if processes work perfectly.</li>
+            <li>Use diagrams appropriately.</li>
+            <li>Keep it short and simple.</li>
+            <li>Define your terms and acronyms the first time they appear in your topic.</li>
+          </ul>
+    
+          <h3>More info</h3>
+          <ul class="menu">
+            <li><a href="./grammar_and_mechanics.html">Grammar and Mechanics</a></li>
+            <li><a href="./language_and_choices.html">Language and word choices</a></li>
+            <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+            <li><a href="./interface_standards.html">Interface items and standards</a></li>
+          </ul>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Write Technically</h3>
+          <a href="./index.html">Overview</a>
+          <h4>Getting Started</h4>
+          <ul>
+            <li><a href="./content_strategy.html">Develop a content strategy</a></li>
+            <li><a href="./docs_as_code.html">Use the Docs-as-Code strategy</a></li>
+            <li><a href="./write_docs.html">Write your docs</a></li>
+            <li><a href="./test_docs.html">Test your documentation</a></li>
+            <li><a href="./review_docs.html">Documentation reviews</a></li>
+          </ul>
+          <h4>Style Guidelines</h4>
+          <ul>
+            <li><a href="./best_practices.html">Guidelines and best practices</a></li>
+            <li><a href="./grammar_and_mechanics.html">Grammar and mechanics</a></li>
+            <li><a href="./interface_standards.html">Interface items and standards</a></li>
+            <li><a href="./language_and_choices.html">Language and choices</a></li>
+            <li><a href="./voice_and_tone.html">Voice and tone</a></li>
+          </ul>
+          <h4>Tutorials</h4>
+          <ul>
+            <li><a href="./git_workflow.html">Follow the Git workflow</a></li>
+            <li><a href="./review_responsibilities.html">Merge request responsibilities</a></li>
+          </ul>
+          <h4>Reference</h4>
+          <ul>
+            <li><a href="./recommended_extensions.html">Recommended VS Code extensions</a></li>
+            <li><a href="./helpful_resources.html">Helpful resources</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>
