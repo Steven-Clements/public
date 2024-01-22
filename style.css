@@ -168,7 +168,7 @@ code {
 
 /* Main header */
 #header-main {
-  background: url("../../img/showcase.jpg") no-repeat center right/cover;
+  background: url("./img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
   #header-main .header-content {
