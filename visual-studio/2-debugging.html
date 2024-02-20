@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Steven Clements | Write Technically</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu">
+      <h3>Visual Studio</h3>
+      <a href="./index.html">Overview</a>
+      <a href="./1-visual-studio-features.html">Develop a content strategy</a>
+      <a href="./2-debugging.html">Use the Docs-as-Code strategy</a>
+      <a href="./3-nuget.html">Write your docs</a>
+      <a href="./4-advanced-features.html">Test your documentation</a>
+      <a href="./5-summary.html">Documentation reviews</a></li>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">The basics of debugging in Visual Studio</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">It's difficult to write error-free code. Use Visual Studio to find the bugs in your project.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <h2>Simple debugging</h2>
+          <p>Add <code>print</code> statements to your project to see how your code is being executed. Code that isn't executing effectively can cause bugs. Use this method for simple debugging on smaller projects. This method <em>isn't</em> recommended for anything other than simple projects.</p>
+          <p>Add <code>print</code> statements to your Universal Windows Platform (UWP) project:</p>
+          <ol>
+            <li>In the <strong>Solution Explorer</strong>, expand <strong>MainPage.xaml</strong> and select <strong>MainPage.xaml.cs</strong>.</li>
+            <img src="../img/open-code.png" alt="Open MainPage.xaml.cs" />
+            <p>The C# code here is associated with the window that displays in your app.</p>
+            <li>Scroll down in the <strong>Editor Window</strong> until you find the following code:</li>
+            <pre><code class="block">
+public MainPage()
+{
+  this.InitializeComponent()
+}
+            </code></pre>
+            <p>Change it to this code:</p>
+            <pre><code class="block">
+public MainPage()
+{
+  this.InitializeComponent();
+}
+public void Hello()
+{
+  System.Diagnostics.Debug.WriteLine("Hello!");
+}
+            </code></pre>
+            <p>Your <strong>Editor Window</strong> should look like this:</p>
+            <img src="../img/print-example.png" alt="Hello World example" />
+            <li>Click the <strong>Run</strong> button or press the <em>F5</em> key to run your project.</li>
+            <img src="../img/run-app.png" alt="Run project" />
+            <li>Minimize the app window and bring Visual Studio back into view. Select <strong>Output</strong> to view the <em>Hello!</em> message created by your app.</li>
+            <img src="../img/view-output.png" alt="View output" />
+            <div class="note">
+              <h4><i class="fas fa-info-circle"></i><strong>NOTE</strong></h4>
+              <p>You can also display debug text in <em>Windows Presentation Foundation (WPF)</em> and <em>Windows Forms</em> apps.</p>
+            </div>
+            <li>Click the <strong>Stop</strong> button to stop the app.</li>
+            <img src="../img/stop-app.png" alt="Stop app" />
+          </ol>
+
+          <h2>Better debugging</h2>
+          <p>Use <em>breakpoints</em> to stop an app at specific points to find out what's going on with it. Let's see how this works.</p>
+          <ol>
+            <li>Update your <code>Hello()</code> function to match this code:</li>
+            <pre><code class="block">
+public void Hello()
+{
+  int a = 1; 
+  int b = 2; 
+  int c = a + b;
+  if (c == 4)
+  {
+    // Success
+  }
+  else
+  {
+    // Fail
+  }
+}
+            </code></pre>
+            <p>Your <strong>Editor Window</strong> should look like this:</p>
+            <img src="../img/breakpoint-example.png" alt="Breakpoint example" />
+            <p><strong>Explanation</strong>: The app wants a value of <code>4</code> to execute the <code>Hello()</code> function. Unfortunately, in this case, <code>a + b</code> doesn't equal <code>c</code>. Let's examine the line performing this calculation using a breakpoint.</p>
+            <li>Select inside the gray margin next to the line containing the code <code>int c = a + b;</code>. A red dot displays. This dot is your breakpoint.</li>
+            <li>Select <strong>Run</strong> or press <em>F5</em> to start your app again.</li>
+            <img src="../img/run-app.png" alt="Run project" />
+            <p>The app stops running immediately. A small yellow arrow appears within the margin, next to the line containing the error. The highlighted line of code is what runs next.</p>
+            <img src="../img/error-indication.png" alt="Error indication" />
+            <p>With your program paused, you can step through it line by line using the <strong>Step into</strong>, <strong>Step over</strong>, and <strong>Step out</strong> buttons on the toolbar.</p>
+            <img src="../img/step-options.png" alt="Step options" />
+            <li>Select <strong>Step into</strong> and watch the yellow arrow follow the flow of control.</li>
+            <img src="../img/step-into.png" alt="Step into" />
+            <li>Hover over the variable <code>c</code>.</li>
+            <img src="../img/using-breakpoints.png" alt="Using breakpoints" />
+            <p>A window appears to display the current value of the variable. As we know, it's 3, not the 4 our function expects.</p>
+            <li>Hover near the closing braces until a green arrow appears.</li>
+            <img src="../img/run-execution.png" alt="Run execution" />
+            <p>This breakpoint allows the app to run until it reaches the containing line.</p>
+            <li>Select the <strong>Stop</strong> button to stop running your app.</li>
+            <img src="../img/stop-app.png" alt="Stop app" />
+          </ol>
+
+          <h2>The philosophy of debugging</h2>
+          <p>A quick word on debugging. Knowing the tools you have at your disposal is half the battle. Understanding why something isn't working takes experience, patience, and luck. Use these tips to debug code:</p>
+          <ul>
+            <li>Understand that your code is doing exactly what you asked it to do. You just asked it to do the wrong thing.</li>
+            <li>Explain your code, line by line, to a friend, or even to yourself. Saying things out loud can help.</li>
+            <li>Break up your code into smaller and smaller sections—a form of refactoring—to confirm that each section is working.</li>
+            <li>Sometimes it helps to take a break and clear your mind.</li>
+          </ul>
+          
+          <h2>Next unit: Using NuGet to add functionality to your app</h2>
+          <a href="./3-nuget.html">Continue</a>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Visual Studio</h3>
+          <ul>
+            <li><a href="./index.html">Overview</a></li>
+            <li><a href="./1-visual-studio-features.html">Install and learn about Visual Studio</a></li>
+            <li><a href="./2-debugging.html">The basics of debugging in Visual Studio</a></li>
+            <li><a href="./3-nuget.html">Using NuGet to add functionality to your app</a></li>
+            <li><a href="./4-advanced-features.html">More advanced Visual Studio features</a></li>
+            <li><a href="./5-summary.html">Summary</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>

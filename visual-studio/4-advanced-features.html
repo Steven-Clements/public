@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Steven Clements | Write Technically</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu">
+      <h3>Visual Studio</h3>
+      <a href="./index.html">Overview</a>
+      <a href="./1-visual-studio-features.html">Develop a content strategy</a>
+      <a href="./2-debugging.html">Use the Docs-as-Code strategy</a>
+      <a href="./3-nuget.html">Write your docs</a>
+      <a href="./4-advanced-features.html">Test your documentation</a>
+      <a href="./5-summary.html">Documentation reviews</a></li>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">More advanced Visual Studio features</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">It could take years to master all that Visual Studio has to offer. Here are some highlights you might find useful.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <h2>Themes</h2>
+          <p>The Visual Studio IDE has light themes and dark themes with lots of variation in between. Try switching to a dark theme:</p>
+          <ul>
+            <p>Select <strong>Tools</strong>, hover over <strong>Theme</strong>, and click <strong>Dark</strong> to apply the <em>Dark theme</em>.</p>
+            <img src="../img/theme.png" alt="Visual Studio Theme" />
+            <p>An example of Visual Studio with the Dark theme:</p>
+            <img src="../img/dark-theme.png" alt="Visual Studio Dark Theme" />
+            <p>Feel free to choose your preferred theme.</p>
+          </ul>
+
+          <h2>Refactoring</h2>
+          <p>Visual Studio has powerful refactoring tools that apply changes to your source code in intelligent ways. For example, you can highlight a piece of code, use the refactoring tool to extract it, and then turn it into a method. The tool is also great for renaming variables.</p>
+          <p>Try it out in your project:</p>
+          <ol>
+            <li>Select the <strong>MainPage.xaml.cs</strong> file in <strong>Solution Explorer</strong>. The file opens.</li>
+            <img src="../img/open-code.png" alt="Open Code" />
+            <li>Hover over the method called <code>Hello()</code> that's nested inside of the <code>MainPage()</code> method. Right-click the method and select <strong>Rename</strong>.</li>
+            <img src="../img/rename-method.png" alt="Rename Method" />
+            <li>Type a new name and click <strong>Apply</strong>. The name changes everywhere it occurs.</li>
+            <img src="../img/apply-rename.png" alt="Apply Rename" />
+          </ol>
+          
+          <h2>Code snippets</h2>
+          <p>Code snippets are predefined pieces of code that Visual Studio can add into your project. They save you lot's of typing once you've gotten familiar with them.</p>
+          <p>Use a snippet to quickly insert a <code>do/while</code> loop:</p>
+          <ol>
+            <li>Select the <strong>MainPage.xaml.cs</strong> file in <strong>Solutions Explorer</strong>.</li>
+            <img src="../img/open-code.png" alt="Open Code" />
+            <li>Add a new line in the <code>MainPage()</code> method.</li>
+            <li>Hold <em>Ctrl</em>, press <em>K</em>, and then press <em>X</em> to open the <strong>Insert Snippet</strong> window.</li>
+            <img src="../img/insert-snippet.png" alt="Insert Snippet" />
+            <li>Click <strong>Visual C#</strong> and select <strong>do</strong> from the list. Your <code>MainPage()</code> method should look like this:</li>
+            <img src="../img/code-snippet.png" alt="Code Snippet" />
+            <li>Enter missing any information. The <strong>do</strong> loop requires a condition. The loop continues for as long as that condition is true.</li>
+          </ol>
+
+          <h2>GitHub</h2>
+          <p>GitHub is a service and website used to store code, including projects created in Visual Studio. It offers several benefits:</p>
+          <ul>
+            <li><strong>Security</strong>: Your code is stored remotely. Remote storage is great in case something happens to your computer.</li>
+            <li><strong>Source code management</strong>: GitHub uses Git. Git makes it easy to undo changes and try new ideas.</li>
+            <li><strong>Sharing</strong>: GitHub makes it easy to share projects, collaborate, and use code from other developers.</li>
+          </ul>
+          <p>Download a project from GitHub directly in Visual Studio:</p>
+          <ul>
+            <li>Find the example project (<a href="https://github.com/Microsoft/Windows-appsample-coloringbook" target="_blank">Windows coloring book sample</a>) in GitHub:</li>
+            <img src="../img/coloring-book-repo.png" alt="Coloring Book Repo" />
+            <li>Click the green <strong>Code</strong> button. The URL for the project displays. Click the <strong>clipboard icon</strong> to copy it.</li>
+            <img src="../img/clone-repo.png" alt="Clone repo" />
+            <li>Open Visual Studio. Click <strong>Git</strong> and select <strong>Clone Repository</strong>.</li>
+            <img src="../img/clone-repo-two.png" alt="Clone repository" />
+            <p>The solution is cloned to your computer.</p>
+            <div class="note">
+              <h4><i class="fas fa-info-circle"></i><strong>NOTE</strong></h4>
+              <p>When you first load a project you've cloned from GitHub, you might need to set the default project. Solutions can contain multiple projects. You might need to specify this particular project as the one Visual Studio should build and run.</p>
+              <p>You'll have to set that option manually. For this example, right-click ColoringBook (Universal Windows) in the Solution Explorer, and then select Set as Startup Project. Visual Studio now runs this project by default.</p>
+            </div>
+            <img src="../img/set-startup-project.png" alt="Set Startup Project" />
+            <li>Select the green triangle <strong>Run</strong> button.</li>
+            <img src="../img/run-app.png" alt="Run Project" />
+            <p>Visual Studio might ask you to download more components. After you confirm these downloads, the app begins building. A loading screen displays:</p>
+            <img src="../img/coloring-book-one.png" alt="Coloring Book One" />
+            <p>After a few moments, a page selection screen displays:</p>
+            <img src="../img/coloring-book-two.png" alt="Coloring Book Two" />
+          </ul>
+
+          <h2>ARM, x86, or x64</h2>
+          <p>Visual Studio builds apps for different types of hardware:</p>
+          <ul>
+            <li>Advanced RISC Machine (ARM)-based systems.</li>
+            <li>Computers running the 32-bit or 64-bit version of Windows.</li>
+          </ul>
+          <p>Projects loaded from GitHub might provide the incorrect default value for system architecture. For example, it might default to <code>ARM</code> if you have an Intel computer. Check that the architecture listed next to the Run button matches your hardware, which is usually x86.</p>
+
+          <h2>Other ways to use GitHub</h2>
+          <p>You can download a project from GitHub as a zip file, unzip the project, and open it directly in Visual Studio. This approach is a good if you're not planning to submit changes to the project repository or share code with other developers.</p>
+
+          <h2>Using Git on a daily basis</h2>
+          <p>Every developer knows that tracking changes in projects can be difficult. What if you try out something, realize it was a mistake, and need to revert to a previous version? What if you're working with a friend and you both make changes to the same files? These issues are what Git is designed to address.</p>
+
+          <h2>Next unit: Summary</h2>
+          <a href="./5-summary.html">Continue</a>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Visual Studio</h3>
+          <ul>
+            <li><a href="./index.html">Overview</a></li>
+            <li><a href="./1-visual-studio-features.html">Install and learn about Visual Studio</a></li>
+            <li><a href="./2-debugging.html">The basics of debugging in Visual Studio</a></li>
+            <li><a href="./3-nuget.html">Using NuGet to add functionality to your app</a></li>
+            <li><a href="./4-advanced-features.html">More advanced Visual Studio features</a></li>
+            <li><a href="./5-summary.html">Summary</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>

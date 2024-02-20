@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Steven Clements | Write Technically</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu" style="align-items: center">
+      <h3>Visual Studio</h3>
+      <a href="./index.html">Overview</a>
+      <a href="./1-visual-studio-features.html">Install and learn about Visual Studio</a>
+      <a href="./2-debugging.html"></a>
+      <a href="./3-nuget.html">Write your docs</a>
+      <a href="./4-advanced-features.html">Test your documentation</a>
+      <a href="./5-summary.html">Documentation reviews</a></li>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">Install and learn about Visual Studio</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Visual Studio is an Integrated Development Environment (IDE) used to develop apps for Windows, the web, and other platforms. It consists of a source code editor, designer, compiler, and debugger.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <p>There are three editions of Visual Studio 2022: the Community, Professional, and Enterprise editions. Visual Studio Community is free and it's the edition used throughout this module.</p>
+          <div class="note">
+            <h4><i class="fas fa-info-circle"></i><strong>NOTE</strong></h4>
+            <p>The images used in this module might look different if you're using the Professional or Enterprise editions.</p>
+          </div>
+          <p><a href="https://visualstudio.microsoft.com/" target="_blank">Download and install Visual Studio</a>. Check out the <a href="https://learn.microsoft.com/en-us/training/modules/introduction-to-windows10-dev/" target="_blank">Introduction to Windows 10</a> module for more detailed instructions and some automated scripts.</p>
+          <div class="note">
+            <h4><i class="fas fa-info-circle"></i><strong>NOTE</strong></h4>
+            <p>Don't confuse Visual Studio — a comprehensive IDE for .NET and C# development — with <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.</p>
+          </div>
+          <p>Visual Studio Code is a standalone lightweight code editor with a plug-in ecosystem that's ideal for web development.</p>
+          <div class="note">
+            <h4><i class="fas fa-info-circle"></i><strong>NOTE</strong></h4>
+            <p>Visual Studio is also available for Mac. This module doesn't cover development with Mac. You might want to visit <a href="https://visualstudio.microsoft.com/vs/mac/" target="_blank">Visual Studio for Mac</a>.</p>
+          </div>
+
+          <h2>Install or update Visual Studio</h2>
+          <p>Before starting, you need to install Visual Studio. Check that you're using the latest version by running the Visual Studio Installer:</p>
+          <ol>
+            <li>Open the <strong>Start</strong> menu and select <strong>Visual Studio Installer</strong>.</li>
+            <li>Select the <strong>Update</strong> button if it appears. Visual Studio downloads and installs the most recent version.</li>
+            <img src="../img/update-visual-studio.png" alt="Visual Studio Installer" />
+          </ol>
+
+          <h2>Some definitions</h2>
+          <h3>Project</h3>
+          <p><em>Projects</em> include source code, like C# and XAML files. Projects also include resources, such as images, sounds, and other Visual Studio information.</p>
+          <h3>Solution</h3>
+          <p>A <em>Solution</em> can encompass more than one project. Your app might use another project for some key functionality or might run on different types of devices and need to be built in different ways. Solutions bring all of your projects together in one place.</p>
+          <h3>IntelliSense</h3>
+          <p><em>IntelliSense</em> displays information about your code directly within the editor. It essentially provides inline documentation, which removes the need to look up reference information elsewhere. In some cases, it might even write small bits of code for you.</p>
+
+          <h2>A quick tour of Visual Studio</h2>
+          <p>The following image is an example of the Visual Studio UI with a Solution open.</p>
+          <a href="../img/visual-studio-ui-updated.png"><image src="../img/visual-studio-ui-updated.png" alt="Visual Studio UI" /></a>
+          <p>The <strong>Solution Explorer</strong> helps you view, navigate, and manage files. Organize your code by grouping files into solutions and projects.</p>
+          <p>The <strong>Editor Window</strong> is where you edit code and design user interfaces (for example, a window with buttons and text boxes). It can also be used to display the contents of files.</p>
+          <p>The <strong>Output Window</strong> displays notifications from different message sources in separate tabs (including debugging and error messages, compiler warnings, publishing and status messages, and other notifications).</p>
+          <p>The <strong>Team Explorer</strong> allows you to track work items and share code with others using version control technologies such as <a href="https://git-scm.com/" target="_blank">Git</a>.</p>
+          <p>The previous image shows an example with C# code. You can also use the <strong>Editor Window</strong> to design the appearance of your app. If you select a XAML file, for example <code>MainPage.xaml</code>, you see:</p>
+          <img src="../img/editor-mode.png" alt="Editor mode" />
+          <p>Preview your UI in the upper window along with the XAML code used to define it. You can switch between views using the <strong>arrow button</strong>. The arrow button is the border between the Design and Code views near the words <strong>Design</strong> and <strong>XAML</strong>. The preview changes whenever you change the XAML file and vice versa.</p>
+          <div class="important">
+            <h4><i class="fas fa-exclamation-triangle"></i><strong>IMPORTANT</strong></h4>
+            <p>If you make changes to the XAML code that violate the formatting rules — like misspelling the name of a control or leaving out a closing (<code>></code>) tag — the design view displays and <em>Invalid Markup</em> message. You won't be able to display a preview.</p>
+            <p>If you don't know how to fix your mistake, you can step back by selecting <strong>Edit → Undo</strong> until the preview works again.</p>
+          </div>
+
+          <h2>Create a project with Visual Studio</h2>
+          <p>Now that Visual Studio is up and running and you're familiar with the environment, let's create a project to test that everything works.</p>
+          <ol>
+            <li>Open Visual Studio. A <strong>Visual Studio 2022</strong> window display. Select <strong>Create a New Project</strong>.</li>
+            <img src="../img/create-new-project.png" alt="Create a new project" />
+            <li>Type <em>Windows Universal</em> in the search box, select <strong>Blank App (Universal Windows)</strong>, and click <strong>Next</strong>.</li>
+            <img src="../img/select-project-type.png" alt="Select project type" />
+            <li>In the <em>Configure your new project</em> screen; name your app <em>Hello World</em>. Leave the <strong>Location</strong> and <strong>Solution</strong> name set to their default values, and click <strong>Create</strong>.</li>
+            <li>Set the <strong>Minimum Version</strong> to <em>Windows 10, version 1809 or higher</em>.</li>
+            <img src="../img/select-min-version.png" alt="Select minimum version" />
+            <p>Your project is created. Your project isn't empty — some files and settings are automatically generated for you.</p>
+            <li>Check your debug settings on the menu bar. They should be set to <strong>Debug</strong> and <strong>x86</strong>.</li>
+            <img src="../img/check-debug-run-app.png" alt="Check debug and run app" />
+            <li>Select the green triangle <strong>Run</strong> button to build and run your app. Or, press the <em>F5</em> key.</li>
+            <img src="../img/run-app.png" alt="Run app" />
+            <li>A large, blank window displays with the text <em>Hello World</em>. This screen is a preview of your app when it's running.</li>
+            <img src="../img/hello-world.png" alt="Hello World" />
+            <div class="note">
+              <h4><i class="fas fa-info-circle"></i><strong>NOTE</strong></h4>
+              <p>The blue rectangle toward the top of your app window is a Visual Studio tool that helps with debugging. It won't appear in your final app.</p>
+            </div>
+            <li>Close your app or select the red square <strong>Stop</strong> button on the menu bar to stop running it.</li>
+            <img src="../img/stop-app.png" alt="Stop app" />
+          </ol>
+
+          <h2>Next unit: The basics of debugging in Visual Studio</h2>
+          <a href="./2-debugging.html">Continue</a>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Visual Studio</h3>
+          <ul>
+            <li><a href="./index.html">Overview</a></li>
+            <li><a href="./1-visual-studio-features.html">Install and learn about Visual Studio</a></li>
+            <li><a href="./2-debugging.html">The basics of debugging in Visual Studio</a></li>
+            <li><a href="./3-nuget.html">Using NuGet to add functionality to your app</a></li>
+            <li><a href="./4-advanced-features.html">More advanced Visual Studio features</a></li>
+            <li><a href="./5-summary.html">Summary</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>
