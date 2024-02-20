@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- ~ ~ ~ < Non-Visual Elements /> ~ ~ ~ -->
+  <head>
+    <!-- Character Encoding and Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet, Icon, and Favicon Links -->
+    <script src="https://kit.fontawesome.com/533946ae6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <!-- Page-Specific Meta Data -->
+    <title>Steven Clements | Working Backwards</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  </head>
+
+  <!-- ~ ~ ~ < Visual Elements /> ~ ~ ~ -->
+  <body>
+    <!-- Main Header and Menu -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="site-menu">
+          <img src="../img/logo.png" alt="Steven Clements Brand Logo" id="brand-logo" />
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="../work.html" class="current">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="context-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="context-close">
+      <i class="fas fa-close fa-2x"></i>
+    </div>
+
+    <div id="context-menu">
+      <h3>Working Backwards</h3>
+      <a href="./index.html">Overview</a>
+      <a href="./understand-define.html">Understand and define</a>
+      <a href="./design-build-launch.html">Design, build, and launch</a>
+      <a href="./manage-optimize.html">Manage and optimize</a>
+    </div>
+
+    <section id="tw-overview" class="center py-3">
+      <div class="container">
+        <h2 class="section-title">Phase 3: Manage and optimize</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">The Working Backwards process doesn't end when a product, feature, or initiative launches.</p>
+      </div>
+    
+      <div id="menu-wrapper">
+        <div id="docs">
+          <p>Once your initiative launches, you must track progress against your goals and, where appropriate, iterate on your solution to improve that progress. Remember that an ideal development process is iterative, taking feedback from customers as they use the product and feeding that back into the Roadmap for further development and optimization.</p>
+          <ul>
+            <li>Define and generate metrics that track user adoption, engagement, and satisfaction.</li>
+            <li>Solicit feedback from users, clients, and stakeholders.</li>
+            <li>Capture, record, and leverage the insights gleaned from these activities to iterate your product Roadmap.</li>
+            <li>Find gaps in your product and identify further opportunities to deliver value to your users. You may cycle back to earlier parts of the process.</li>
+            <li>Continue to produce weekly 2x2 reports, as well as weekly metrics reports.</li>
+            <li>Continue to maintain a product Roadmap and product entries for the Launch Calendar.</li>
+          </ul>
+
+          <h2>Validate hypotheses and respond to data</h2>
+          <p>When you set out goals in the form of OKRs, you made hypotheses about the measurable outcomes of the work you intended to deliver. Now, it's time to take measurements and determine if your ideas were correct.</p>
+          <p>There are many ways of gathering data. It would help if you defined how you'll measure success in your OKRs. Use your insights to shape your Roadmap as you capture data, learn how your product is being used, and track your progress toward your goals.</p>
+
+          <h2>Product metrics</h2>
+          <p>The metrics you report will depend (to a large extent) on your OKRs. However, there are standard metrics and measurement approaches you should consider.</p>
+
+          <h3>The HEART framework</h3>
+          <p>The HEART framework is valuable in helping you think about what to measure and how. Its dimensions and suggested metrics are summarized below.</p>
+          <ul>
+            <li><strong>Happiness</strong>: How satisfied are customers with the product?.</li>
+            <li><strong>Engagement (How much do people use the product?)</strong>: Monthly, weekly, daily, seven-day, and sixty-day active users, actions per user.</li>
+            <li><strong>Adoption (How many people started using the product?)</strong>: First-time users.</li>
+            <li><strong>Retention (How many people continue to use the product?)</strong>: Sixty-day active users and all-time users.</li>
+            <li><strong>Task success (Can people use the product to achieve their goals?)</strong>: Remote usability testing (for example, a Zoom conference).</li>
+          </ul>
+
+          <h2>Manage bugs and tech debt</h2>
+          <p>Keeping on top of bugs and tech debts is vital to respond to new and evolving customer needs.</p>
+
+          <h3>Track, prioritize, and fix bugs</h3>
+          <p>Bugs are an inevitable part of software development. Tracking, prioritizing, and fixing bugs pre- and post-release is essential. The following guidelines will help you stay on top of the bugs in your product.</p>
+          <ul>
+            <li>Be disciplined about capturing and recording bugs: Make sure you have a Bug ticket category. Whenever you encounter a bug (for example, in a demo, during use, or from user feedback), create a ticket for it. When you create a bug ticket, be sure to include the following:</li>
+            <ul>
+              <li>The steps to follow to reproduce the bug.</li>
+              <li>The expected behavior.</li>
+              <li>The actual behavior.</li>
+            </ul>
+            <li>Define an objective way to prioritize bugs and work on the highest-priority bugs first: Some bugs are more problematic than others. You must tackle the most troublesome bugs first, but how do you know which ones cause the most problems? One way to answer this question is to define an objective scoring framework for your bugs. Some teams score bugs based on a User pain metric. User pain is calculated based on the prevalence (the portion of users affected), impact (blocking versus frustrating), and the importance of the task involved (core use case versus a convenient feature).</li>
+            <li>Dedicate time in Scrum ceremonies to your bug backlog: Dedicate time to grooming your backlog of bugs. Make sure you have the necessary information to fix them. Level-set your scoring rubric to ensure the highest priority bugs are listed first.</li>
+            <li>Pick up bug tickets in every sprint: Make sure you dedicate story points to bug tickets in every sprint. If you're concerned about many high-priority bug tickets, consider running several sprints where every engineer commits to picking up one bug ticket. This strategy helps you close out bugs quickly without holding up feature work too much.</li>
+            <li>Learn how Unity Technologies <a href="https://blog.unity.com/technology/a-look-inside-tracking-bugs-by-user-pain">uses user pain to track and prioritize their bugs</a></li>
+          </ul>
+
+          <h3>Stay on top of technical debt</h3>
+          <p>Learn about Atlassian's approach to <a href="https://www.atlassian.com/agile/software-development/technical-debt">dealing with tech debt</a>.</p>
+
+          <h2>Report on progress</h2>
+          <p>A 2x2 report is a one-page document that summarizes (in four quadrants) the highlights, low-lights, risks and blockers, needs for escalation, and upcoming deliverables for a specific initiative. Throughout the ongoing management phase, you should complete weekly 2x2 reports.</p>
+        </div>
+
+        <aside id="docs-menu">
+          <h3>Visual Studio</h3>
+          <ul>
+            <li><a href="./index.html">Overview</a></li>
+            <li><a href="./understand-define.html">Understand and define</a></li>
+            <li><a href="./design-build-launch.html">Design, build, and launch</a></li>
+            <li><a href="./manage-optimize.html">Manage and optimize</a></li>
+          </ul>
+        </aside>
+      </div>
+
+    <!-- Main Footer -->
+    <footer id="site-footer">
+      <div class="footer-content container">
+        <p>Copyright ©2023 Steven Clements — All Rights Reserved.</p>
+        <!-- Social Menu -->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/steven-clements-6b0725237/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/steven-clements" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+
+</html>
